@@ -1,74 +1,63 @@
 body {
-    background: url(http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg) no-repeat center;
-    background-attachment: fixed;
-    margin: 0;
+  background: url("http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg") no-repeat center;
+  background-attachment: fixed;
+  margin: 0;
 }
- 
-.container {
-    background: rgba(0, 0, 0, 0.5);
-    min-height: 100vh;
-    padding-top: 30px;
+body .container {
+  background: rgba(0,0,0,0.5);
+  min-height: 100vh;
+  padding-top: 30px;
 }
-
 .row {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 .col {
-    width: 300px;
-    display: inline-block;
-    /*margin-right: 20px; */
-    margin-bottom: 30px;
-    transition: all 0.3s;
+  width: 300px;
+  display: inline-block;
+/*margin-right: 20px */
+  margin-bottom: 30px;
+  transition: all 0.3s;
 }
-
-.col:nth-child(3n) {
-    margin-right: 0px;
-}
-
 .col:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.5);
-    -webkit-filter: brightness(1.5);
+  cursor: pointer;
+  box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.5);
+  filter: brightness(1.5);
+  -webkit-filter: brightness(1.5);
 }
-
-.preview img {
-    width: 100%;
+.col:nth-child(3n) {
+  margin-right: 0px;
 }
-
-.intro {
-    color : white;
+.col .preview img {
+  width: 100%;
 }
-
-.bottom {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
+.col .intro {
+  color: #fff;
 }
-
-.avatar {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 10px;
+.col .bottom {
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-
-.avatar img {
-    width: 100%;
+.col .bottom .avatar {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
 }
-
-.channel_name {
-    margin-bottom: 10px;
-    white-space: nowrap; /* don't change line*/
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 200px;
+.col .bottom .avatar img {
+  width: 100%;
+}
+.col .bottom .channel_name {
+  margin-bottom: 10px;
+  white-space: nowrap /* don't change line*/;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
 }
